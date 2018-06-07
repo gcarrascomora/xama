@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="holamundo.MyPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>            
+        </Grid.RowDefinitions>
+                <BoxView Color="Silver" Grid.Row="0"/>
+
+
+                <BoxView Color="Blue"   Grid.Row="1"> 
+                </BoxView>
+                <BoxView Color="Green"  Grid.Row="2">
+                    
+                </BoxView>
+                <BoxView Color="Silver" Grid.Row="3">
+                    
+                </BoxView>
+                <BoxView Color="Red" Grid.Row="4">
+                </BoxView>
+                <Image Source="logo.png" Grid.Row="0"/>
+        </Grid>
+            
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
