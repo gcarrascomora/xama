@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
@@ -39,7 +39,7 @@ namespace holamundo
             await splash1.ScaleTo(1, 2000); //Time-consuming processes such as initialization
             await splash1.ScaleTo(0.9, 1500, Easing.Linear);
             await splash1.ScaleTo(150, 1200, Easing.Linear);
-            Application.Current.MainPage = new NavigationPage(new MyPage());    //After loading  MainPage it gets Navigated to our new Page
+            Application.Current.MainPage = new NavigationPage(new TabMenu());    //After loading  MainPage it gets Navigated to our new Page
         }  
     }
 }

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="holamundo.Lista"
+             >
+
+<ListView x:Name="listadatos"
+          HasUnevenRows="true"
+          SeparatorColor="Green"
+          Margin="0,0,10,0"
+          BackgroundColor="Transparent"
+          CachingStrategy="RecycleElement"
+          ItemSelected="Handle_ItemSelected"
+
+          >
+        <ListView.ItemTemplate >
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Vertical" >
+                         <StackLayout Orientation="Horizontal">
+                            <Label HorizontalTextAlignment="Start"
+                                   Text="{Binding nombrePersona}"
+                                   Margin="20"
+                                   FontAttributes="Bold"
+                                   FontSize="Medium">
+                                
+                            </Label>
+                            <Label Text="{Binding apellidoPersona}"
+                                   Margin="-20,20,10,10"
+                                   FontAttributes="Bold"
+                                   FontSize="Medium"
+                                   XAlign="Start">
+
+                            </Label>
+                        </StackLayout>
+                        <Label Text="{Binding correoPersona}"
+                               FontSize="Small"
+                               Margin="20,-20,0,0"
+                               ></Label>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>
